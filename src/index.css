@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-white font-poppins;
+}
+
+.pride-border {
+  position: relative;
+}
+
+.pride-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #E74C3C, #E67E22, #F1C40F, #2ECC71, #3498DB, #9B59B6);
+}
+
+.chat-container {
+  scrollbar-width: thin;
+  scrollbar-color: #3498DB #1E1E1E;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #1E1E1E;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #3498DB;
+  border-radius: 20px;
+}
+
+.ad-container {
+  min-height: 250px;
+}
